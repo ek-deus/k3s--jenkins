@@ -23,6 +23,16 @@ curl -sfL https://get.k3s.io | K3S_URL=${k3s_url} K3S_TOKEN=${k3s_token} sh -
 # [подготовка]
 ```
 sudo apt update && sudo apt upgrade -y
+sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+sudo ufw allow 6443/tcp
+sudo ufw allow 443/tcp
+sudo apt install mc
+sudo apt install htop
+sudo apt install net-tools
+sudo apt install ansible
+sudo apt install python3
+sudo apt install autoremove
+sudo systemctl reboot
 ```
 ---
 
