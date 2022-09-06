@@ -25,5 +25,11 @@ kubectl get pv
 # Показать метки всех подов (или любого другого объекта Kubernetes, которым можно прикреплять метки)
 kubectl get pods --show-labels
 
-# Вывод всех секретов
-kubectl get secrets
+# Проверить содержимое объекта
+kubectl describe <>
+
+# получить список событий
+kubectl get events
+
+# Вывод логов в поде <pod-name> в режиме реального времени. Это похоже на команду 'tail -f' Linux.
+kubectl logs -f <pod-name>
