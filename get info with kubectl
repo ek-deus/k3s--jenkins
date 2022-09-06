@@ -1,6 +1,9 @@
 # сетевые адреса управляющего кластера
 kubectl cluster-info
 
+#Вывести все поддерживаемые типы ресурсов, включая API-группу, флаг namespaced (организован ли ресурс в пространство имён или нет) и Kind
+kubectl api-resources
+
 # показать объединённые настройки kubeconfig
 kubectl config view
 
@@ -24,6 +27,3 @@ kubectl get pods --show-labels
 
 # Вывод всех секретов
 kubectl get secrets
-
-#Вывести все поддерживаемые типы ресурсов, включая API-группу, флаг namespaced (организован ли ресурс в пространство имён или нет) и Kind
-kubectl api-resources
