@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      pod: jenkins
+  template:
+    metadata:
+      labels:
+        pod: jenkins
+    spec:
+      containers:
+        - name: jenkins
+          image: jenkins/jenkins:alpine
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
