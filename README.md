@@ -20,7 +20,7 @@ curl -sfL https://get.k3s.io | K3S_URL=${k3s_url} K3S_TOKEN=${k3s_token} sh -
 ```
 ---
 
-# [подготовка]12
+# [подготовка]15
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
@@ -36,7 +36,7 @@ sudo systemctl reboot
 ```
 ---
 
-# [перезагрузка]11
+# [перезагрузка]15
 ```
 sudo systemctl reboot
 ```
