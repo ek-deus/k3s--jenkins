@@ -36,7 +36,7 @@ sudo systemctl reboot
 ```
 ---
 
-# [перезагрузка]
+# [перезагрузка]12
 ```
 sudo systemctl reboot
 ```
